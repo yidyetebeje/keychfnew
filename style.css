@@ -1,0 +1,313 @@
+:root {
+    --primary-color: #202749;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f8f9f9;
+    font-family: 'Noto Serif Ethiopic', serif;
+}
+.section_container {
+    width: 80%;
+    margin: 0 auto;
+}
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    border-radius: 0.2em;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background-color: #333;
+    }
+}
+.main {
+    position: relative;
+    height: 65vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    align-items: center;
+    text-align: center;
+    background: url('/assets/KeyCHF-Background-2-min.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 50;
+}
+
+
+    
+
+.main_text {
+    font-size: 4.68rem;
+    font-weight: 800;
+}
+.supporting_text {
+    font-size: 1.125rem;
+    font-weight: 400;
+    
+    margin-bottom: 1em;
+}
+.main_text_switch, .supporting_text_switch {
+    background-color: var(--primary-color);
+    padding:  0.1em 0.15em;
+    color: #fff;
+    border-radius: 0.2em;
+}
+.navbar {
+
+    width: 100%;
+    background: #ffffff;
+    z-index: 1000;
+    -webkit-transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
+    box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_navitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar_navitems li {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.navbar_navitems a {
+    color: #333;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    zoom: 1;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.navbar_navitems a:hover {
+    color: var(--primary-color);
+}
+
+.navbar_logo {
+
+    padding-left: 1rem;
+    align-self: center;
+    width: 60%;
+}
+.service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    gap: 2em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.service_item {
+    width: 23%;
+}
+.service_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: start;
+}
+.service_container h3 {
+    color: #333;
+    font-size: 1.08em;
+}
+.service_container p {
+    color: #777;
+    font-weight: 400;
+    font-size: 0.88em;
+}
+.service_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+.service_logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        background-color: #333;
+        animation: grow 0.2s ease-in-out forwards;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    z-index: -1;
+}
+.header {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2em 0 1em 0;
+}
+.header_on_main {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.2s ease-in-out;
+}
+.stat_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_statsitem {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.094rem;
+    color: #777;
+    text-align: center;
+}
+.number {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+.silegna {
+    font-size: 1.2rem;
+    color: #777;
+}
+.silegna  ul {
+    list-style: disc;
+    padding-left: 1.5em;
+
+}
+.silegna_desc {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #777;
+    text-align: center;
+    line-height: 1.5;
+}
+@media (max-width: 600px) {
+    .stat_container {
+        flex-direction: column;
+    }
+    .section_statsitem {
+        width: 100%;
+    }
+}
+.agelgilot_desc{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #777;
+    text-align: start;
+    line-height: 1.5;
+}
+.agelgilot {
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 2%, rgba(32,39,73,1) 60%, rgba(38,55,140,1) 100%);
+    width:100%;
+    padding: 4em 0em;
+}
+.agelgilot_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.agelgilot ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.agelgilot ul li::before {
+    content: "\2713\0020"; /* Unicode right mark followed by a space */
+}
+.colored {
+    color: #51cbce;
+    font-style: italic;
+}
+.agelgilot_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2em;
+}
+.silegna_main {
+    display: flex;
+}
