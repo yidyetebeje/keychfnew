@@ -7,8 +7,7 @@
     <meta name="description" content="የቤት ባለቤት እንዲሆኑ የሚያስችለውን በዓይነቱ ለየት ያለውን ተዘዋዋሪ የቁጠባ ፈንድ እና ዕቁብ ላይ የተመሰረተውን">
     <meta name="keywords" content="keychf, ቁጠባ, ቤት, ዕቁብ">
     <meta name="robots" content="index, follow">
-    <link rel="preconnect" href="/assets/logo.webp" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/assets/logo.webp" type="image/x-icon">
     
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" preload>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin preload>
@@ -20,7 +19,7 @@
 </head>
 
 <body>
-    <section class="main" data-aos="zoom-in-down">
+    <section class="main">
         <div>
             <p class="main_text">
                 እኛ <span class="main_text_switch">አስተማማኝ</span> ነን!
@@ -36,22 +35,33 @@
             <a href="/login" class="btn">ይግቡ</a>
         </div>
     </section>
-    <section class="navbar">
-        <div class="navbar_logo">
-            <img src="/assets/logo.webp" />
-        </div>
-
-        <ul class="navbar_navitems">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </section>
+    <div class="navbar_container">
+        <section class="navbar section_container">
+            <div class="navbar_logo">
+                <img src="/assets/logo.webp" alt="keychf logo"/>
+            </div>
+        
+            <ul class="navbar_navitems">
+                <li><a href="#" onclick="scrollToSection('feature')">Features</a></li>
+                <li><a href="#" onclick="scrollToSection('service')">Services</a></li>
+                <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+              </ul>
+        
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </div>
     
-    <div id="service" data-aos="zoom-in-up">
+    
+    
+    
+    <div id="feature" >
         <h1 class="header">የተለየ ጥቅም</h1>
-        <section class="section_container service">
+        <section class="section_container service aos-init aos-animate" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" >
         
             <div class="service_item">
                 <div class="service_container">
@@ -136,10 +146,10 @@
         </section>
     </div>
     
-    <section class="agelgilot" data-aos="zoom-in-down" >
+    <section class="agelgilot" id="service" >
         <div class="section_container">
             <h1 class="header">አገልግሎታችን</h1>
-        <div class="agelgilot_container">
+        <div class="agelgilot_container aos-init aos-animate" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" >
             
             <div class="agelgilot_flex">
                 <!-- <div class="card">
@@ -166,18 +176,31 @@
         
     </section>
    
-    <section class="video_section">
-        
+    <section class="video_section aos-init aos-animate" data-aos="fade-down"  data-aos-easing="linear" data-aos-duration="1500">
+        <a href="https://www.youtube.com/watch?v=9gA3F2GXros" title="KeyCHF - Explanation Video Press Release" target="_blank">
+            <div class="play-button-container">
+                <div class="play-button-circle">
+                  <svg class="play-button-svg" fill="white" xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                    <!-- Your SVG path here -->
+                    <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
+                  </svg>
+                </div>
+              </div>
+        </a>
+        <p class="video_heading">KeyCHF - <strong>Explanation Video Press Release</strong>
+        </p>
     </section>
     <!--
         section sile egna
     -->
-    <section class=" silegna" data-aos="zoom-in-up">
+    <section id="about" class="silegna aos-init aos-animate" data-aos="fade-down"  data-aos-easing="linear" data-aos-duration="1500">
         <h1 class="header">ስለ እኛ</h1>
         <div class="section_container">
             <h2 class="silegna_desc">ኪ ሃዉሲንግ ፋይናንስ ሶሉሽን አነስተኛ እና መካከለኛ ገቢ ያላቸውን የህብረተሰብ ክፍሎች የቤት ባለቤት ለማድረግ ዓላማ ያነገበ ድርጅት ነው።</h2>
+            <br>
+            <br>
             <div>
-                <div> 
+                <div class="silegna_spacing"> 
                     <p>ኪ ሃዉሲንግ ፋይናንስ ሶሉሽን በአገር ውስጥ እና ከአገር ውጪ ፣</p>
                     <ul>
                         <li>በቤት ልማት ዘርፍ፣</li>
@@ -196,7 +219,7 @@
     <!--
         section wesagn merejawoch
     -->
-    <section class="stat" data-aos="zoom-in-down">
+    <section class="stat aos-init aos-animate" data-aos="fade-down" data-aos="zoom-in-up"  data-aos-easing="linear" data-aos-duration="1500">
         <h1 class="header">ወሳኝ መረጃዎች</h1>
         <div class="section_container stat_container">
             <div class="section_statsitem">
@@ -218,7 +241,7 @@
 
         </div>
     </section>
-    <footer data-aos="zoom-in-down">
+    <footer data-aos="zoom-in-down" id="contact">
         <h1 class="header">ያግኙን</h1>
         <div class="section_container">
             <div>
@@ -258,8 +281,60 @@
                 </ul>
             </div>
         </div>
+    </footer>
+    <div class="site-info">
+        <div class="container">
+            <div class="btt">
+                <a class="back-to-top" href="#page" title="Back To Top"><i class="fa fa-angle-double-up wow flash" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: flash;"></i></a>
+            </div>
+            Copyright © 2023 KeyCHF
+        </div>
+    </div>
 </body>
 <script>
     AOS.init();
+    const mainTextSwitch = document.querySelector('.main_text_switch');
+    const supportingTextSwitch = document.querySelector('.supporting_text_switch');
+
+    const mainTexts = ["KeyCHF", "አስተማማኝ", "ገንዘብ ቆጣቢ", "ህልም አሳኪ"];
+    const supportingTexts = ["ክፍያ", "ቁጠባ", "ክፍያ", "ቁጠባ"];
+
+    let index = 0;
+
+    function switchTexts() {
+        mainTextSwitch.classList.add('flip-animation');
+        supportingTextSwitch.classList.add('flip-animation');
+
+        setTimeout(() => {
+            mainTextSwitch.classList.remove('flip-animation');
+            supportingTextSwitch.classList.remove('flip-animation');
+
+            mainTextSwitch.textContent = mainTexts[index];
+            supportingTextSwitch.textContent = supportingTexts[index];
+
+            index = (index + 1) % mainTexts.length;
+        }, 500); // Wait for the animation to complete (0.5s) before updating text
+    }
+
+    setInterval(switchTexts, 2000);
+    function toggleMenu() {
+        const navItems = document.querySelector('.navbar_navitems');
+        navItems.classList.toggle('show');
+    }
+
+    function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const offsetTop = section.getBoundingClientRect().top;
+        console.log(offsetTop);
+        window.scrollTo({
+        behavior: 'smooth',
+        top: offsetTop
+        });
+  }
+}
+
+    // Select all elements with the class "number"
+   
 </script>
 </html>
