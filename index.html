@@ -42,10 +42,10 @@
             </div>
         
             <ul class="navbar_navitems">
-                <li><a href="#" onclick="scrollToSection('feature')">Features</a></li>
-                <li><a href="#" onclick="scrollToSection('service')">Services</a></li>
-                <li><a href="#" onclick="scrollToSection('about')">About</a></li>
-                <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
         
             <div class="hamburger" onclick="toggleMenu()">
@@ -287,7 +287,7 @@
             <div class="btt">
                 <a class="back-to-top" href="#page" title="Back To Top"><i class="fa fa-angle-double-up wow flash" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: flash;"></i></a>
             </div>
-            Copyright © 2023 KeyCHF
+            Copyright © 2024 KeyCHF
         </div>
     </div>
 </body>
@@ -322,19 +322,5 @@
         navItems.classList.toggle('show');
     }
 
-    function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        const offsetTop = section.getBoundingClientRect().top;
-        console.log(offsetTop);
-        window.scrollTo({
-        behavior: 'smooth',
-        top: offsetTop
-        });
-  }
-}
-
-    // Select all elements with the class "number"
-   
 </script>
 </html>
