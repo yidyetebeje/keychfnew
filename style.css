@@ -13,7 +13,7 @@ body {
     font-family: 'Noto Serif Ethiopic', serif;
 }
 .section_container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 .btn {
@@ -38,7 +38,7 @@ body {
     gap: 1.2rem;
     align-items: center;
     text-align: center;
-    background: url('/assets/KeyCHF-Background-2-min.png');
+    background: url('/assets/KeyCHF.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ body {
 }
 .service_container h3 {
     color: #333;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
 }
 .service_container p {
@@ -161,8 +161,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7em;
-    height: 7em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -187,6 +187,7 @@ body {
 
 .logo {
     position: absolute;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
